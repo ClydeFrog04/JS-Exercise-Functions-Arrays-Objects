@@ -137,7 +137,11 @@ function getName(person) {
  * the returned value should be: 2.
  */
 function appleIndex(strings) {
-    return strings.indexOf("apple");
+    //return strings.indexOf("apple");
+    for(let i = 0; i < strings.length; i++){
+        if(strings[i] === 'apple') return i;
+    }
+    return -1;
 }
 
 /**
@@ -155,13 +159,35 @@ function appleIndex(strings) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
  */
-function isItAnApple(strings) {
-    var out = [strings.length];
-    for (var i = 0; i < strings.length; i++) {
-        out[i] = strings[i] === "apple" ? true : false;//Here it is again XD
+function isItAnApple(arr) {
+    //rewrote this. I realised my ternary operation was unnecessary here, we don't need any if/ternary checks!
+    out = [];
+    for (let i = 0; i < arr.length; i++) {
+        out.push(arr[i] === 'apple');
     }
     return out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
