@@ -168,28 +168,6 @@ function isItAnApple(arr) {
     return out;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 // ⭐️ Example Test Data ⭐️
 
